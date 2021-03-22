@@ -1,0 +1,33 @@
+JFLAGS = -g
+JC = javac
+JVM = java
+.SUFFIXES: .java .class
+.java.class:
+	$(JC) $(JFLAGS) $*.java
+
+CLASSES = \
+	  Player.java \
+	  Team.java \
+	  BasketballTeam.java \
+	  FootballTeam.java \
+	  HandballTeam.java \
+	  TeamFactory.java \
+	  TeamVisitor.java \
+	  Competition.java \
+	  Visitor.java \
+	  Visitable.java \
+	  Observer.java \
+	  Subject.java \
+	  Main.java
+
+MAIN = Main
+
+default: classes
+
+classes: $(CLASSES:.java=.class)
+
+run: $(MAIN).class
+	$(JVM) $(MAIN) $(COMANDA) $(IN1) $(IN2) $(OUT)
+
+clean:
+	$(RM) *.class
