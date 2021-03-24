@@ -6,7 +6,7 @@ Tema presupune simularea unei gale de sport in cadrul careia se vor desfasura
 mai multe competitii sportive precum fotbal, baschet si handbal. Se urmareste
 implementarea unui sistem care inscrie jucatorii si gestioneaza competitia.
 
-CERINTA 1
+#### IMPLEMENTARE CERINTA 1
 
 Clasa Player reprezinta tipul jucator si are are un constructor cu parametrii
 si suprascrie metodele toString si compareTo, implementand interfata Comparable.
@@ -21,7 +21,7 @@ acestui obiect si este folosita pentru creearea obiectelor de tip Team, lasand
 subclasele sa decida ce tip de clasa sa instantieze(FootballTeam, HandballTeam 
 sau BasketballTeam).
 
-CERINTA 2
+#### IMPLEMENTARE CERINTA 2
 
 Pentru a folosi Design Pattern-ul Visitor s-au creat interfetele Visitor si 
 Visitable, avand implementarea standard. Cele 4 tipuri "team" implementeaza 
